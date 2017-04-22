@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Roboto:100,300,400" rel="stylesheet">
 
     <!-- font awsome - start -->
-    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- font awsome - stop -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- style reposnsywne - start -->
     <link rel="stylesheet" href="css/responsive.css">
@@ -22,16 +22,31 @@
 
 <body>
     <!-- menu nawigacyjne - start -->
-    <nav id="main-nav">
-    <label for="drop"><i class="fa fa-bars" aria-hidden="true"></i></label>
-    <input type="checkbox" id="drop" />
-        <ul>
-            <li class="menu-item"><a href="#main-header">Home</a></li>
-            <li class="menu-item"><a href="#about">O mnie</a></li>
-            <li class="menu-item"><a href="#skills">Moje umiejętności</a></li>
-            <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
-            <li class="menu-item"><a href="#contact">Kontakt</a></li>
-        </ul>
+    <nav id="main-nav" class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-glowne" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="menu-glowne">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="menu-item"><a href="#main-header" class="menu-add">Home</a></li>
+                <li class="menu-item"><a href="#about">O mnie</a></li>
+                <li class="menu-item"><a href="#skills">Umiejętności</a></li>
+                <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="menu-item"><a href="#contact">Kontakt</a></li>
+
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+        <!-- /.container-fluid -->
     </nav>
     <!-- menu nawigacyjne - stop -->
 
@@ -61,19 +76,19 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vero ullam architecto nobis amet odit necessitatibus porro repellat perspiciatis, velit praesentium, quidem hic eaque fuga. Ipsam quasi illum qui incidunt? perspiciatis, velit praesentium, quidem hic eaque fuga. Ipsam quasi illum qui incidunt?</p>
         <div class="skills-icons">
             <figure>
-               <img src="icons/html5.png" class="about-img2" alt="html5" />
+                <img src="icons/html5.png" class="about-img2" alt="html5" />
                 <figcaption>HTML5</figcaption>
             </figure>
             <figure>
-               <img src="icons/css3.png" alt="css3" />
+                <img src="icons/css3.png" alt="css3" />
                 <figcaption>CSS3</figcaption>
             </figure>
             <figure>
-               <img src="icons/js.png" alt="JS" />
+                <img src="icons/js.png" alt="JS" />
                 <figcaption>JavaScript</figcaption>
             </figure>
             <figure>
-               <img src="icons/jquery.png" alt="jquery" />
+                <img src="icons/jquery.png" alt="jquery" />
                 <figcaption>jQuery</figcaption>
             </figure>
         </div>
@@ -165,14 +180,14 @@
         </p>
     </footer>
     <!-- footer - stop -->
-    
+
     <!-- jquery - start -->
     <script src="js/jquery-3.2.0.min.js"></script>
     <!-- jquery - sop -->
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
-   
+
     <!-- skrypt js - start -->
     <script src="js/main.js"></script>
     <!-- skrypt js - start -->

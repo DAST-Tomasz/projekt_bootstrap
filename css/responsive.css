@@ -1,3 +1,9 @@
+@media (min-width: 1170px) {
+    .navbar {
+        border-radius: 0;
+    }
+}
+
 @media (max-width: 1170px) {
     #portfolio .portfolio-item {
         width: 50%;
@@ -5,68 +11,70 @@
     #portfolio .portfolio-item:last-child {
         width: 100%;
     }
-    
-   
+    .navbar {
+        border-radius: 0;
+    }
 }
-    
+
 @media (max-width: 768px) {
-    #main-nav label {
-        display: block;
-        color: #1ac056;
-        text-align: right;
-        padding: 15px;
-        font-size: 1.5em;
+    .navbar {
+        border-radius: 0;
     }
-    /* ul dodaje niepotrzebny margin - usuwamy */
-    #main-nav ul {
-        margin: 0;
-        display: none;
+    #main-nav {
+        border: none;
+        background-color: #fff;
     }
-    
     #main-nav ul .menu-item {
         display: block;
-        padding: 15px;
+        padding: 5px;
+        border: none;
+        background-color: #fff;
     }
-    
+    #main-nav ul .menu-item a {
+        color: #1ac056;
+    }
+    #main-nav ul .menu-item a:hover {
+        color: #291f1a;
+    }
+    #main-nav .navbar-collapse {
+        border: 0;
+    }
     #main-nav #drop:checked + ul {
         display: block;
     }
-    
-   .col-1-2 {
+    .col-1-2 {
         width: 100%;
     }
-    
     #about figure .about-img {
         width: 100%;
         max-height: none;
     }
-    
     #portfolio .portfolio-item {
         width: 100%;
     }
-    
-    
     #skills .skills-icon figure {
         margin: 0;
         width: 49%;
         margin-top: 30px;
     }
-    
-    #contact h2, address, .social-icons {
-    text-align: center;
+    #contact h2,
+    address,
+    .social-icons {
+        text-align: center;
     }
-    
+}
+
+@media (min-width: 768px) .navbar {
+    border-radius: 0;
 }
 
 @media (max-width: 480px) {
     #main-header .header-caption h1 {
         font-size: 3em;
     }
-    
     #main-header .header-caption h2 {
         font-size: 2em;
-    }  
-    
+    }
     #portfolio {
         padding: 0;
     }
