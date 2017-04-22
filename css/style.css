@@ -13,19 +13,21 @@ span {
     color: #1ac056;
 }
 
-.col-1-2 {
+/*.col-1-2 {
     width: 50%;
     float: left;
-}
+}*/
 
 section {
     overflow: auto;
-    padding: 40px 60px;
+    padding: 60px, 0;
 }
 
 h2 {
     text-align: center;
     font-size: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 h3 {
@@ -60,7 +62,6 @@ p {
 }
 
 #main-nav ul .menu-item {
-    display: inline-block;
     padding: 20px;
 }
 
@@ -139,6 +140,7 @@ p {
 
 #about figure {
     text-align: center;
+    padding-bottom: 20px;
     margin: 0;
 }
 
@@ -152,6 +154,9 @@ p {
     margin-top: 0;
 }
 
+.container-fluid {
+    border: 1px solid #000;
+}
 
 /* sekcja Skills - start */
 
@@ -178,18 +183,25 @@ p {
 
 /* sekcja portfolio - start */
 
+.container {
+    width: 100%;    
+}
 
-/* usuniecie marginesu */
+#portfolio {
+    padding-bottom: 20px;
+}
 
 #portfolio .portfolio-items {
     font-size: 0;
     text-align: center;
 }
 
+#portfolio .portfolio-items [class*="col-"] {
+    padding: 0;
+}
+
 #portfolio .portfolio-item {
     height: 350px;
-    width: 33%;
-    display: inline-block;
     /* przywrocenie marginesu */
     font-size: initial;
     background-position: center;
@@ -262,6 +274,7 @@ p {
 #contact {
     background-color: #213b50;
     color: #fff;
+    padding: 10px;
 }
 
 #contact h2 {
